@@ -16,8 +16,6 @@
 
 
 
-
-
 /* _____________________H E A D E R______________________ */
 
 /* #region HEADER */
@@ -25,9 +23,10 @@
 header {
   border-radius: 8px;
   padding: 17px 30px;
-  background-color: #FFF;
+  background-color: #ffffffe8;
   position: sticky;
   top: 0;
+  z-index: 999;
 }
 
 .row-header {
@@ -81,14 +80,6 @@ color: #000;
 .col-button a:hover {
   color: #43B97F;
   background: transparent;
-}
-
-.col-logo {
-  padding-top: 10px;
-}
-
-.col-nav {
-  padding-top: 4px;
 }
 
 .button-none {
@@ -379,7 +370,6 @@ h1 {
 
 
 
-
 /* ______________________T H R E E_______________________ */
 
 /* #region THREE */
@@ -393,6 +383,7 @@ h1 {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  margin-bottom: 50px;
 }
 
 .h2-three {
@@ -414,15 +405,20 @@ h1 {
   line-height: normal;
 }
 
-.row-ul-three {
+.carousel-item.active, .carousel-item-next, .carousel-item-prev {
   display: flex;
+  gap: 25px;
   flex-wrap: wrap;
-  gap: 32px;
-  padding-top: 40px;
-  padding-bottom: 32px;
+  justify-content: center;
 }
 
-.row-ul-three li a {
+.carousel-indicators [data-bs-target] {
+  height: 45px;
+  border: 0;
+  margin: 0;
+  padding: 0 16px;
+  width: auto;
+  text-indent: 0;
   color: #8A8A8A;
   text-align: center;
   font-family: "Carter One";
@@ -430,68 +426,39 @@ h1 {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  padding: 4px 16px;
-  transition: all .3s;
+  opacity: 1;
 }
 
-.row-ul-three li a:hover {
-  background: #43B97F;
+.carousel-indicators .active {
+  background-color: #43B97F;
   color: #FFF;
+  transition: opacity 0.6s ease;
 }
 
-.row-ul-three li .hover {
-  background: #43B97F;
-  color: #FFF;
-}
-
-.row-img-three {
-  display: flex;
-  gap: 24px;
-}
-
-.col1-three {
-  padding: 0;
-}
-
-.col2-three  {
+.carousel-item .div-2-img {
   display: flex;
   flex-direction: column;
-  gap: 23px;
-  padding: 0;
+  gap: 25px;
 }
 
-
-
-@media (max-width: 929px) {
-
-  .h2-three, .p-three {
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .row-ul-three, .row-ul-three li, .row-ul-three li a {
-    margin-left: auto;
-    margin-right: auto;
-  }
-
+.carousel-item .div-2-img img {
+  width: 100%;
 }
 
-@media (max-width: 1227px) {
+.carousel-indicators {
+  position: relative;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+  margin-bottom: 30px;
+  justify-content: flex-start;
+}
 
-  .row-img-three {
-    flex-direction: column;
+@media (max-width: 959px) {
+  .carousel-indicators{
+    justify-content: center;
   }
-
-  .col1-three img, .col2-three img {
-    width: 100%;
-  }
-
-  .col1-three, .col2-three {
-    margin-left: auto;
-    margin-right: auto;
-  }
-
 }
 
 /* #endregion THREE */

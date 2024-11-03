@@ -5,10 +5,10 @@
 
     <title>Home</title>
 
-    <!-- Main css -->
+    <link href="./css/bootstrap.css" rel="stylesheet">
+
     <link href="./css/basics.css" rel="stylesheet">
 
-    <!-- Main css -->
     <link href="./css/styles.css" rel="stylesheet">
 
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -181,40 +181,65 @@
             eget vitae ligula sed urna sit sagittis interdum a.
           </p>
         </div>
-        <ul class="row-ul-three">
-          <li>
-            <a href="#" class="hover">
-              Full Europe
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              saint Martin
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              Egypt
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              London, UK
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              Rome, Italty
-            </a>
-          </li>
-        </ul>
-        <div class="row-img-three">
-          <div class="col-4 col1-three">
-            <img src="./img/three/1.png" alt="">
+        
+        <div id="carouselExampleIndicators" class="carousel slide">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1">Full Europe</button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2">saint Martin</button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3">Egypt</button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4">London, UK</button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5">Rome, Italty</button>
           </div>
-          <div class="col-8 col2-three">
-            <img src="./img/three/2.png" alt="">
-            <img src="./img/three/3.png" alt="">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="https://picsum.photos/386/593" class="d-block" alt="...">
+              
+              <div class="div-2-img">
+                <img src="https://picsum.photos/796/285" class="d-block" alt="...">
+              
+                <img src="https://picsum.photos/797/285" class="d-block" alt="...">
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <img src="https://picsum.photos/385/593" class="d-block" alt="...">
+              
+              <div class="div-2-img">
+                <img src="https://picsum.photos/795/285" class="d-block" alt="...">
+              
+                <img src="https://picsum.photos/794/285" class="d-block" alt="...">
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <img src="https://picsum.photos/384/593" class="d-block" alt="...">
+              
+              <div class="div-2-img">
+                <img src="https://picsum.photos/793/285" class="d-block" alt="...">
+              
+                <img src="https://picsum.photos/792/285" class="d-block" alt="...">
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <img src="https://picsum.photos/385/592" class="d-block" alt="...">
+              
+              <div class="div-2-img">
+                <img src="https://picsum.photos/795/284" class="d-block" alt="...">
+              
+                <img src="https://picsum.photos/794/283" class="d-block" alt="...">
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <img src="https://picsum.photos/384/591" class="d-block" alt="...">
+              
+              <div class="div-2-img">
+                <img src="https://picsum.photos/793/282" class="d-block" alt="...">
+              
+                <img src="https://picsum.photos/792/281" class="d-block" alt="...">
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -231,7 +256,7 @@
             eget vitae ligula sed urna sit sagittis interdum a.
           </p>
         </div>
-        <div class="row">
+        <div class="row" style="gap: 30px;">
           <div class="col-4-four">
             <a href="#" class="item-four">
               <div>
@@ -430,5 +455,7 @@
         </div>
       </div>
     </footer>
+
+    <script src="./js/bootstrap.bundle.js"></script>
   </body>
 </html>
